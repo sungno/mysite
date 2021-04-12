@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head> <body>
+<table>
+  <tr>
+    <th> 코드 </th>
+    <th> 타입 </th>
+    <th> 질문 </th>
+    <th> 답변 </th>
+  </tr> {% for faq in faqs %} <tr>
+  <td>{{ faq.faq_id }}</td>
+  <td>{{ faq.faq_type }}</td>
+  <td>{{ faq.faq_question }}</td>
+  <td>{{ faq.faq_answer }}</td>
+</tr> {% endfor %} </table>
+</body>
+</html>
+
